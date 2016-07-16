@@ -1,14 +1,19 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DA592A9F0D891CC7F3A87A15A4E3D483951D454B",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "38D9009B322140394B9DA7467F68950B56B35FF5" : 0,
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : 0,
+    "DA592A9F0D891CC7F3A87A15A4E3D483951D454B" : 0,
     "67620B5EFA902936DF04070AF595B76AB0333747" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "89C9C9B1-A916-4773-83D6-EDC127D09C35",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "38D9009B322140394B9DA7467F68950B56B35FF5" : "testLogin\/SwiftHTTP\/",
+    "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3" : "testLogin\/SwiftyJSON\/",
+    "DA592A9F0D891CC7F3A87A15A4E3D483951D454B" : "testLogin\/",
     "67620B5EFA902936DF04070AF595B76AB0333747" : "testLogin\/Alamofire\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "testLogin",
@@ -24,6 +29,16 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67620B5EFA902936DF04070AF595B76AB0333747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SwiftyJSON\/SwiftyJSON.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C861FC00CEE0F6A6BE81FCFF6785FAA78C58EBB3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NorthForkInc\/login.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DA592A9F0D891CC7F3A87A15A4E3D483951D454B"
     }
   ]
 }

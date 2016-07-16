@@ -9,11 +9,12 @@
 import UIKit
 
 import Alamofire
+import SwiftyJSON
 
 
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var txtUsername: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
@@ -44,29 +45,49 @@ class SignUpViewController: UIViewController {
             alertView.show()
         } else {
             
-                    let parameters: [String: AnyObject] = [
-                        "firstName" : "",
-                        "userName" : username,
-                        "password" : password,
-                        "email" : email,
-                        "zip" : ""]
+            let parameters: [String: AnyObject] = [
+                "firstName" : "",
+                "userName" : username,
+                "password" : password,
+                "email" : email,
+                "zip" : ""]
             
-                    Alamofire.request(.POST,"http://localhost:8080/tagIt/user",parameters: parameters, encoding: .JSON)
-                        .responseJSON { response in switch response.result {
-                        case .Success(let JSON):
-//                            print(response.request)  // original URL request
-//                            print(response.response) // URL response
-//                            print(response.data)     // server data
-//                            print(response.result)   // result of response serialization
+            Alamofire.request(.POST,"http://localhost:8080/tagIt/user",parameters: parameters, encoding: .JSON)
+                .responseJSON { response in
+                    guard response.result.error == nil else {
+                        // got an error in getting the data, need to handle it
+                        print("error calling GET on /todos/1")
+                        print(response.result.error!)
+                        return
+                    }
+                    
+                    if let value = response.result.value {
+                        let todo = JSON(value)
+                        print(todo["status"].int)
+                        
+                        if(todo["status"].int == 0){
+                            self.dismissViewControllerAnimated(true, completion: nil)
+                        }else if(todo["status"].int == 1){
                             
-                            let res = JSON as! NSDictionary
-                            
-                            print(res.objectForKey("response"))
-                            print(res.objectForKey("status"))
-                        default: break
-                            }
+                            let alertView:UIAlertView = UIAlertView()
+                            alertView.title = "Sign Up Failed!"
+                            alertView.message = "Username already taken"
+                            alertView.delegate = self
+                            alertView.addButtonWithTitle("OK")
+                            alertView.show()
+                        } else if(todo["status"].int == 2){
+                            let alertView:UIAlertView = UIAlertView()
+                            alertView.title = "Sign Up Failed!"
+                            alertView.message = "Email already taken"
+                            alertView.delegate = self
+                            alertView.addButtonWithTitle("OK")
+                            alertView.show()
+                        }
+                    }
+                    
+                
             }
-             self.dismissViewControllerAnimated(true, completion: nil)
+//            self.dismissViewControllerAnimated(true, completion: nil)
         }
     }
     
@@ -76,24 +97,24 @@ class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
