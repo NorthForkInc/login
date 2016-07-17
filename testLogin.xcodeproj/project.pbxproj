@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		A950E30A1D347A0D00D9CF4D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950E2FB1D3479EB00D9CF4D /* Alamofire.framework */; };
 		A95757C41D3A91390022271F /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95757B51D3A911E0022271F /* SwiftyJSON.framework */; };
+		A95757C61D3ABD8A0022271F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95757C51D3ABD8A0022271F /* TableViewController.swift */; };
+		A95757CA1D3C12E10022271F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95757C91D3C12E10022271F /* CustomCell.swift */; };
+		A95757CC1D3C265A0022271F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95757CB1D3C265A0022271F /* DetailViewController.swift */; };
 		A9B4164B1D2ACDEB00864C84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B4164A1D2ACDEB00864C84 /* AppDelegate.swift */; };
 		A9B4164D1D2ACDEB00864C84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B4164C1D2ACDEB00864C84 /* ViewController.swift */; };
 		A9B416501D2ACDEB00864C84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B4164E1D2ACDEB00864C84 /* Main.storyboard */; };
@@ -166,6 +169,9 @@
 /* Begin PBXFileReference section */
 		A950E2F01D3479EB00D9CF4D /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		A95757AA1D3A911E0022271F /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		A95757C51D3ABD8A0022271F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A95757C91D3C12E10022271F /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		A95757CB1D3C265A0022271F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A9B416471D2ACDEB00864C84 /* testLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B4164A1D2ACDEB00864C84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B4164C1D2ACDEB00864C84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -267,12 +273,15 @@
 				A9B4164A1D2ACDEB00864C84 /* AppDelegate.swift */,
 				A9B4164C1D2ACDEB00864C84 /* ViewController.swift */,
 				A9B4164E1D2ACDEB00864C84 /* Main.storyboard */,
+				A95757CB1D3C265A0022271F /* DetailViewController.swift */,
+				A95757C91D3C12E10022271F /* CustomCell.swift */,
 				A9B416541D2ACDEB00864C84 /* Assets.xcassets */,
 				A9B416561D2ACDEB00864C84 /* LaunchScreen.storyboard */,
 				A9B416591D2ACDEB00864C84 /* Info.plist */,
 				A9B416511D2ACDEB00864C84 /* testLogin.xcdatamodeld */,
 				A9B4167B1D2AD96E00864C84 /* LoginVCViewController.swift */,
 				A9B4167D1D2ADA8400864C84 /* SignUpViewController.swift */,
+				A95757C51D3ABD8A0022271F /* TableViewController.swift */,
 			);
 			path = testLogin;
 			sourceTree = "<group>";
@@ -541,10 +550,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B4164D1D2ACDEB00864C84 /* ViewController.swift in Sources */,
+				A95757C61D3ABD8A0022271F /* TableViewController.swift in Sources */,
 				A9B4164B1D2ACDEB00864C84 /* AppDelegate.swift in Sources */,
 				A9B416531D2ACDEB00864C84 /* testLogin.xcdatamodeld in Sources */,
 				A9B4167C1D2AD96E00864C84 /* LoginVCViewController.swift in Sources */,
+				A95757CA1D3C12E10022271F /* CustomCell.swift in Sources */,
 				A9B4167E1D2ADA8400864C84 /* SignUpViewController.swift in Sources */,
+				A95757CC1D3C265A0022271F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

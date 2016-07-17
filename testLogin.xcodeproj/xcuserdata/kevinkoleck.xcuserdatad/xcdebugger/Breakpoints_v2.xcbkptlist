@@ -35,5 +35,99 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testLogin/TableViewController.swift"
+            timestampString = "490478997.30835"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "TableViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testLogin.TableViewController.TableData.getter : Swift.Array&lt;testLogin.TableViewController.Table_Data&gt;"
+                  moduleName = "testLogin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinkoleck/Desktop/IOS/testLogin/testLogin/TableViewController.swift"
+                  timestampString = "490479157.533739"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testLogin.TableViewController.TableData.setter : Swift.Array&lt;testLogin.TableViewController.Table_Data&gt;"
+                  moduleName = "testLogin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinkoleck/Desktop/IOS/testLogin/testLogin/TableViewController.swift"
+                  timestampString = "490479157.534287"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testLogin.TableViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; testLogin.TableViewController"
+                  moduleName = "testLogin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinkoleck/Desktop/IOS/testLogin/testLogin/TableViewController.swift"
+                  timestampString = "490479157.534735"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "testLogin.TableViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;testLogin.TableViewController&gt;"
+                  moduleName = "testLogin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinkoleck/Desktop/IOS/testLogin/testLogin/TableViewController.swift"
+                  timestampString = "490479157.534862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "50">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "testLogin/TableViewController.swift"
+            timestampString = "490482700.485898"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
